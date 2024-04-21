@@ -11,6 +11,8 @@ import 'react-toastify/dist/ReactToastify.css';
 
 const inter = Inter({ subsets: ["latin"] });
 
+export const dynamic = "force-dynamic";
+
 export const metadata: Metadata = {
   title: "AlJanoub Restaurant",
   description: "Best food in town!",

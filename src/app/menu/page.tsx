@@ -6,6 +6,7 @@ export const dynamic = "force-dynamic";
 
 const getData = async ()=>{
   const res = await fetch(process.env.API_BASE_URL+"/api/categories",{
+    next: { revalidate: 0 },
     cache:"no-store"
   })
 

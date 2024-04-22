@@ -5,6 +5,7 @@ import React from "react";
 
 const getData = async (category:string)=>{
   const res = await fetch(process.env.API_BASE_URL+`/api/products?cat=${category}`,{
+    next: { revalidate: 0 },
     cache:"no-store"
   })
 

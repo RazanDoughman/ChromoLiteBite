@@ -4,6 +4,7 @@ import React from "react";
 
 const getData = async ()=>{
   const res = await fetch(process.env.API_BASE_URL+"/api/products",{
+    next: { revalidate: 0 },
     cache:"no-store"
   })
 

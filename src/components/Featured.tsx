@@ -1,6 +1,7 @@
 import { ProductType } from "@/types/types";
 import Image from "next/image";
 import React from "react";
+import Link from "next/link";
 
 const getData = async ()=>{
   const res = await fetch(process.env.API_BASE_URL+"/api/products",{

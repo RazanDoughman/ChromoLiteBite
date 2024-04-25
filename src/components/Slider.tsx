@@ -16,7 +16,7 @@ const data = [
   },
   {
     id: 3,
-    title: "the best pizza to share with your family",
+    title: "the best meal to share with your family",
     image: "/ss2.png",
   },
 ];

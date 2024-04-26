@@ -11,6 +11,8 @@ import 'react-toastify/dist/ReactToastify.css';
 
 const inter = Inter({ subsets: ["latin"] });
 
+export const dynamic = "force-dynamic";
+
 export const metadata: Metadata = {
   title: "AlJanoub Restaurant",
   description: "Best food in town!",
@@ -23,7 +25,7 @@ export default function RootLayout({
 }) {
   return (
     <html lang="en">
-      <body className={inter.className}>
+      <body className={`${inter.className} overflow-x-hidden`}>
         <AuthProvider>
           <QueryProvider>
             <div className="flex flex-col min-h-screen">

@@ -27,9 +27,17 @@ const Price = ({ product }: { product: ProductType }) => {
   }, []);
 
   useEffect(() => {
-    setTotal(
-      quantity * (product.price + sizeOptions[selectedSizeIndex].additionalPrice)
-    );
+    if(typeof product.price =="string"){
+      setTotal(
+        quantity * (parseFloat(product.price) + sizeOptions[selectedSizeIndex].additionalPrice)
+      );
+    }
+    else {
+      setTotal(
+        quantity * (product.price + sizeOptions[selectedSizeIndex].additionalPrice)
+      );
+    }
+
   }, [quantity, selectedSizeIndex, product.price]);
 
   const handleCart = () => {
@@ -42,7 +50,7 @@ const Price = ({ product }: { product: ProductType }) => {
       quantity: quantity,
     });
     toast.success("Product added to the cart!");
-    router.push(`/menu/${product.catSlug}`);
+    router.back();
   };
 
   return (

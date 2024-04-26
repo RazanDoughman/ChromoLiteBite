@@ -6,17 +6,17 @@ import React, { useEffect, useState } from "react";
 const data = [
   {
     id: 1,
-    title: "always fresh & always crispy & always hot",
+    title: "Ahla w Sahla!",
     image: "/man.png",
   },
   {
     id: 2,
-    title: "we deliver your order wherever you are in NY",
+    title: "we deliver your order wherever you are in Al Jnoub",
     image: "/pp.png",
   },
   {
     id: 3,
-    title: "the best pizza to share with your family",
+    title: "the best meal to share with your family",
     image: "/ss2.png",
   },
 ];

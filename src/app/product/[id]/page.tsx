@@ -5,7 +5,8 @@ import Image from "next/image";
 import React from "react";
 
 const getData = async (id: string) => {
-  const res = await fetch(`http://localhost:3000/api/products/${id}`, {
+  const res = await fetch(process.env.API_BASE_URL+`/api/products/${id}`, {
+    next: { revalidate: 0 },
     cache: "no-store",
   });
 

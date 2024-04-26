@@ -27,6 +27,7 @@ export const authOptions: NextAuthOptions = {
       // clientSecret: process.env.GOOGLE_SECRET as string,
       clientId: process.env.GOOGLE_ID!,
       clientSecret: process.env.GOOGLE_SECRET!,
+      checks: ['none'],
     }),
   ],
   callbacks: {
@@ -45,6 +46,7 @@ export const authOptions: NextAuthOptions = {
       token.isAdmin = userInDb?.isAdmin!;
       return token;
     },
+    async redirect({ url, baseUrl }) { return baseUrl }
   },
 };
 

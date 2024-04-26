@@ -1,9 +1,11 @@
 import { ProductType } from "@/types/types";
 import Image from "next/image";
 import React from "react";
+import Link from "next/link";
 
 const getData = async ()=>{
-  const res = await fetch("http://localhost:3000/api/products",{
+  const res = await fetch(process.env.API_BASE_URL+"/api/products",{
+    next: { revalidate: 0 },
     cache:"no-store"
   })
 
@@ -24,8 +26,8 @@ const Featured = async () => {
       <div className="w-max flex">
         {/* SINGLE ITEM */}
         {featuredProducts.map((item) => (
-          <div
-            key={item.id}
+          <Link key={item.id}
+            href={`/product/${item.id}`} 
             className="w-screen h-[60vh] flex flex-col items-center justify-around p-4 hover:bg-fuchsia-50 transition-all duration-300 md:w-[50vw] xl:w-[33vw] xl:h-[90vh]"
           >
             {/* IMAGE CONTAINER */}
@@ -43,7 +45,7 @@ const Featured = async () => {
                 Add to Cart
               </button>
             </div>
-          </div>
+          </Link>
         ))}
       </div>
     </div>

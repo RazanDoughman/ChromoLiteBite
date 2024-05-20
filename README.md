@@ -1,4 +1,3 @@
-
 # **ChromoLiteBite**
 
 A Restaurant Food Ordering App, that seamlessly caters to health-conscious and budget-conscious foodies. It has an extensive menu categorized by budget considerations and calories content.
@@ -12,16 +11,6 @@ As well as it is color-blind friendly for inclusivity.
 **Backend:** Node, Prisma, PostgreSQL
 
 
-
-## **Installation**
-
-Install ChromoLiteBite with npm
-
-```bash
-  npm install ChromoLiteBite
-  cd ChromoLiteBite
-```
-    
 ## **Run Locally**
 
 Clone the project
@@ -50,13 +39,11 @@ Start the server
 
 
 ## **Demo**
-
-
-After starting the server, you can then open the webapp using the local host link given in the terminal.
-
-or through the link of the WebApplication mentioned below:
-
-https://chromolitebit.vercel.app/
+\
+<img src="https://github.com/RazanDoughman/ChromoLiteBite/blob/main/public/s3.png" alt="screenshot" width="600"/>
+\
+\
+To see the project demo, you can either use this link https://chromolitebit.vercel.app/ or run project locally and open through localhost:3000
 
 When you open the link in your browser, the homepage will appear directly in front of you. 
 It includes: 
@@ -84,29 +71,12 @@ When you're done adding to cart your wanted dishes, you can proceed to the cart 
 
 
 After filling the required fields and having a succesfull payment, it will then direct you to the history of orders of the logged in account for a preview. 
-## Contributing
 
-If you have a suggestion that would make this better, please fork the repo and create a pull request. You can also simply open an issue with the tag "enhancement".
-
-Don't forget to give the project a star! Thanks again!
-
-1. Fork the Project
-2. Create your Feature Branch 
-```bash
-git checkout -b feature/AmazingFeature
-```
-3. Commit your Changes
-```bash
-git commit -m 'Add some AmazingFeature'
-```
-4. Push to the Branch 
-```bash
-git push origin feature/AmazingFeature
-```
-5. Open a Pull Request
 ## Authors
 
+- [@RazanDoughman](https://github.com/RazanDoughman)
+  
 - [@ZahraaSAwada](https://www.github.com/ZahraaSAwada)
 
-- 
+- [@rashaharb](https://github.com/rashaharb)
 
